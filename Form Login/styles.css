@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    background-color: cornflowerblue;
+    align-items: center;
+    font-family: Tahoma;
+}
+
+.login {
+    background-color: white;
+    width: 350px;
+    text-align: center;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.login h2{
+    margin: 0, 0, 20px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.input-group{
+    position: relative;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.input-group input{
+    height: 50px;
+    width: 100%;
+    padding: 0, 20px;
+    box-sizing: border-box;
+    font-size: 15px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.input-group span{
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    padding: 0px;
+    text-transform: capitalize;
+    background-color: #fff;
+    transition: 0,5;
+}
+
+.login .input-group input:focus ~ span,
+.login .input-group input:valid ~ span{
+    top: -12px;
+    left: 20px;
+    font-size: 12px;
+    background-color: aqua;
+    padding: 2px 4px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.login .input-group input[type="submit"]{
+    background-color: fuchsia;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    width: 35%;
+    transition: 0.5;
+}
+
+.login .input-group input[type="submit"]:hover{
+    width: 100%;
+    background-color: blueviolet;
+    color: white;
+}
